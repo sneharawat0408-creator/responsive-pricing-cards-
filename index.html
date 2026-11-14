@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="pricing">
+
+        <h1>Choose Your Plan</h1>
+        <p>Simple pricing for everyone</p>
+
+        <!-- Monthly Yearly Toggle -->
+        <div class="toggle">
+
+            <button id="monthly" class="active" aria-pressed="true">
+                Monthly
+            </button>
+
+            <button id="yearly" aria-pressed="false">
+                Yearly
+            </button>
+
+        </div>
+
+
+        <!-- Pricing Cards -->
+        <div class="cards">
+
+            <!-- Starter Plan -->
+            <div class="card">
+
+                <h2>Starter</h2>
+
+                <h1 class="price" data-monthly="199" data-yearly="1990">199</h1>
+
+                <p class="unit">per month</p>
+
+                <ul>
+                    <li>Basic Features</li>
+                    <li>5 Projects</li>
+                    <li>Email Support</li>
+                    <li>Basic Storage</li>
+                    <li>Free Updates</li>
+                </ul>
+
+                <button>Get Started</button>
+
+            </div>
+
+
+            <!-- Pro Plan -->
+            <div class="card popular">
+
+                <h2>Pro</h2>
+
+                <span>POPULAR</span>
+
+                <h1 class="price" data-monthly="499" data-yearly="4990">499</h1>
+
+                <p class="unit">per month</p>
+
+                <ul>
+                    <li>All Starter Features</li>
+                    <li>Unlimited Projects</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Storage</li>
+                    <li>Free Updates</li>
+                </ul>
+
+                <button>Get Started</button>
+
+            </div>
+
+
+            <!-- Team Plan -->
+            <div class="card">
+
+                <h2>Team</h2>
+
+                <h1 class="price" data-monthly="999" data-yearly="9990">999</h1>
+
+                <p class="unit">per month</p>
+
+                <ul>
+                    <li>All Pro Features</li>
+                    <li>Team Collaboration</li>
+                    <li>24/7 Support</li>
+                    <li>Extra Storage</li>
+                    <li>Team Management</li>
+                </ul>
+
+                <button>Get Started</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

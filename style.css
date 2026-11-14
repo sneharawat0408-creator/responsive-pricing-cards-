@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f3ff;
+    color: #222;
+}
+
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Toggle Buttons */
+
+.toggle {
+    margin: 30px 0;
+}
+
+.toggle button {
+    padding: 12px 25px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.toggle button.active {
+    background-color: #6c4cff;
+    color: white;
+}
+
+/* Pricing Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card .price {
+    font-size: 35px;
+    color: #6c4cff;
+    margin-bottom: 10px;
+}
+
+.card .unit {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.card ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c4cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Popular Card */
+
+.popular {
+    border: 2px solid #6c4cff;
+    transform: scale(1.05);
+}
+
+.popular span {
+    display: inline-block;
+    background-color: #6c4cff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Hover Effects */
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.15);
+}
+
+/* Popular Card Hover */
+
+.popular:hover {
+    transform: scale(1.05) translateY(-6px);
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
